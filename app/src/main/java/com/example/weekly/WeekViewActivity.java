@@ -44,7 +44,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setWeekView()
     {
-        monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));
+        monthYearText.setText(monthYearFrgiomDate(CalendarUtils.selectedDate));
         ArrayList<LocalDate> days = daysInWeekArray(CalendarUtils.selectedDate);
 
         CalendarAdapter calendarAdapter = new CalendarAdapter(days, this);
@@ -52,7 +52,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         calendarRecyclerView.setLayoutManager(layoutManager);
         calendarRecyclerView.setAdapter(calendarAdapter);
     }
-
+//라라라라라라라라
 
 
 
